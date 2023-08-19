@@ -5,15 +5,20 @@ module.exports = {
     extend: {
       colors: {
         "primary":"#FF5F1B",
+        "primary-dark": "#f04901",
         "primary-light":"#FFEFE8",
-        "text-primary": "#212121",
+        "font-dark": "#212121",
         "text-medium": "#FFCFBA",
-        "text-primary-light": "#A1A1A1",
+        "text-light": "#A1A1A1",
       },
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'], // Default sans-serif font stack
         'manrope': ['Manrope', 'sans-serif'],       // Default serif font stack
-           // Custom font stack
+      },
+      screens: {
+        "md": "780px",
+        'xxl': '1368px', // Define your custom breakpoint
+        'xxxl': '1920px', // Define your custom breakpoint
       },
     },
   },

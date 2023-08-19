@@ -6,3 +6,92 @@
 body{
     font-family: "Roboto", sans-serif;
 }
+
+.banner {
+    background: linear-gradient(to right, white 77%, #212121 33%);
+}
+
+.hero-text{
+    transform-style: preserve-3d;
+}
+
+.circle{
+    box-shadow: inset 4px 0px 0px -1px rgb(255, 95, 27,0.8);
+    min-height: 480px;
+    min-width:500px;
+    border-radius: 50%;
+    z-index: 1;
+    transform-origin: center;
+    animation: animate 8s linear infinite;
+}
+
+.circle:hover {
+    animation-play-state: paused; 
+}
+
+
+.circle::after {
+    content: '';
+    min-height: 110%;
+    min-width:45%; 
+    position: absolute;
+    top: 50%;
+    right:80%;
+    transform: translate(50%, -50%); 
+    z-index: 10; 
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, #ffffff00 40%, rgba(255, 255, 255, 0.8) 100%);
+
+  }
+
+
+  
+
+  .circle .select {
+    box-shadow: 2px 2px 15px 0px rgba(255, 95, 27, 0.35);
+  }
+
+.cta-btn {
+        padding: .8rem 1.4rem;
+        border-radius: 29.5px 29.5px 0px 29.5px;
+        background: var(--primary-1, #FF5F1B);
+        box-shadow: 2px 2px 15px 0px rgba(255, 95, 27, 0.35);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.8rem;
+        backface-visibility: hidden;
+}
+
+
+@keyframes animate {
+    0%, 100% {
+        transform: rotateZ(0deg);
+    }
+    30%{
+        transform: rotateZ(-10deg);
+    }
+    60%{
+        transform: rotateZ(10deg);
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+    html{
+        font-size: 80% !important;
+    }
+    .custom-calc-width {
+        max-width: calc(100vw - 600px) !important;
+      }   
+}
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        background: linear-gradient(to right, white 82%, #212121 18%);
+    }
+}
+@media screen and (max-width: 780px) {
+    .banner {
+        background: #ffff;
+    }
+}
