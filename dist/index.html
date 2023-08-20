@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <title>Document</title>
 </head>
 <body class="w-full xxl:text-lg">
@@ -65,14 +69,14 @@
     </header>
 
     
-    <section class="banner mx-auto h-screen flex items-center bg-gradient-to-r">
+    <section class="banner mx-auto min-h-[125vh] flex items-center bg-gradient-to-r">
 
     <img src="./assests/leaf.png"/ alt="leaf" class="absolute left-0 top-5 w-40">
     <img src="./assests/leaf-tomato.png"/ alt="leaf-tomato" class="absolute right-0 w-44 hidden lg:block">
 
 
         <!-- hero -->
-        <div class="relative w-[95%] xxl:max-w-[80%] custom-calc-width mx-auto px-6 py-3 xxxl:py-8 flex justify-between items-center mt-12">
+        <div class="relative w-[95%] xxl:max-w-[80%] custom-calc-width mx-auto px-6 py-3 xxxl:py-8 flex justify-between items-center">
 
             <!-- banner text -->
 
@@ -104,18 +108,21 @@
                 
                 <div class="circle absolute md:right-[-30%] lg:right-[-20%] xl:right-[5%] xxl:right-[-10%] xxxl:right-[60%] translate-y-[-50%] hover:is-interacting">
                     <div class="select select-two w-24 xxxl:w-32 bg-white rounded-full p-1 border-[3px] border-primary absolute top-2 left-12">
-                        <img src="./assests/food-2.png" alt="food-2" class="w-20 xxxl:w-24 cursor-pointer">
+                        <img src="./assests/food-2.png" alt="food-2" class="w-24 xxxl:w-24 cursor-pointer">
                     </div>
                     <div class="select select-one w-24 xxxl:w-32 bg-white rounded-full p-1 border-[3px] border-primary absolute top-[35%] right-[90%]">
-                        <img src="./assests/food-1.png" alt="food-1" class="w-20 xxxl:w-32 mt-1 cursor-pointer">
+                        <img src="./assests/food-1.png" alt="food-1" class="w-24 xxxl:w-32 mt-1 cursor-pointer">
                     </div>
                     <div class="select select-three w-24 xxxl:w-32 bg-white rounded-full p-1 border-[3px] border-primary absolute top-[75%] left-5">
-                        <img src="./assests/food-3.png" alt="food-3" class="w-20 xxxl:w-24 cursor-pointer">
+                        <img src="./assests/food-3.png" alt="food-3" class="w-24 xxxl:w-24 cursor-pointer">
                     </div>
                 </div>
 
                 
-                <img src="./assests/food-1.png" alt="food-1" class="food-img mt-5 absolute right-[5%] z-40">
+                <img src="./assests/food-1.png" alt="food-1" class="food-img mt-5  right-[5%] z-40">
+                <img src="./assests/participants.png" alt="participants" class="absolute -bottom-[30%] z-40 -right-5 opacity-90">
+                <img src="./assests/review.png" alt="participants" class="absolute -top-[25%] z-40 -right-5 opacity-90">
+           
          
 
             </div>
@@ -125,7 +132,306 @@
 
     </section>
 
+    <!-- main -->
+    <main>
+        <img src="./assests/chilli.png" alt="chilli" class="absolute top-[110%] left-0 w-40">
+
+        <!-- popular dishes -->
+
+        <section class="relative mx-auto py-28 mt-16">
+           
+            <img src="./assests/single-leaf.png" alt="single-leaf" class="absolute top-20 left-[25%] w-20 h-20">
+            <img src="./assests/tomato-slice.png" alt="single-leaf" class="absolute top-30 right-0 w-20 h-20">
+           
+
+            <h1 class="text-font-dark text-[52px] xxl:text-6xl xxxl:text-8xl font-bold leading-[60px] xxl:leading-[70px] tracking-[1px] text-center w-full">
+                Popular <span class="text-primary">Dishes</span> 
+            </h1>
+
+            <!-- slider -->
+
+            <div class="swiper mt-14">
+                
+                <div class="swiper-wrapper py-4">
+                    <!-- slide 1 -->
+                  <div class="swiper-slide">
+                    <div class="slide-card text-center">
+                      <div class="h-64 flex items-center justify-center">
+                        <img src="./assests/recipe-1.png" alt="" class="max-w-[100%] max-h-[100%]"/>
+                       </div> 
+                      <div class="flex flex-col gap-5 mt-4 justify-between items-center">
+
+                        <div class="flex items-center justify-between w-full">
+                        <div class="text-left ">
+                            <h1 class="text-lg text-font-dark font-semibold">Teriyaki beef</h1>
+                            <p class="text-xs text-text-light">With Sticky white</p>
+                        </div>
+                        <button class="p-1 rounded-full hover:bg-slate-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#FF5F1B" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FF5F1B" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>  
+                        </button>
+                        </div>
+                        
+                        <div class="flex items-center justify-between w-full">
+                        <div class="text-left ">
+                            <h1 class="text-lg text-font-dark font-semibold">$15.99</h1>
+                        </div>
+                        <button class="p-2 rounded-full bg-primary hover:bg-primary-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>                                  
+                        </button>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- slide 2 -->
+                  <div class="swiper-slide">
+                    <div class="slide-card text-center">
+                      <div class="h-64 flex items-center justify-center">
+                        <img src="./assests/recipe-2.png" alt="" class="max-w-[100%] max-h-[100%]"/>
+                       </div> 
+                      <div class="flex flex-col gap-5 mt-4 justify-between items-center">
+
+                        <div class="flex items-center justify-between w-full">
+                        <div class="text-left ">
+                            <h1 class="text-lg text-font-dark font-semibold">Italian Pasta</h1>
+                            <p class="text-xs text-text-light">Paste with tomato sauce</p>
+                        </div>
+                        <button class="p-1 rounded-full hover:bg-slate-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#FF5F1B" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FF5F1B" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>  
+                        </button>
+                        </div>
+                        
+                        <div class="flex items-center justify-between w-full">
+                        <div class="text-left ">
+                            <h1 class="text-lg text-font-dark font-semibold">$35</h1>
+                        </div>
+                        <button class="p-2 rounded-full bg-primary hover:bg-primary-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>                                  
+                        </button>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- slide 3 -->
+                  <div class="swiper-slide">
+                    <div class="slide-card text-center">
+                      <div class="h-64 flex items-center justify-center">
+                        <img src="./assests/recipe-3.png" alt="" class="max-w-[100%] max-h-[100%]"/>
+                       </div> 
+                      <div class="flex flex-col gap-5 mt-4 justify-between items-center">
+
+                        <div class="flex items-center justify-between w-full">
+                        <div class="text-left ">
+                            <h1 class="text-lg text-font-dark font-semibold">Grilled Salmon</h1>
+                            <p class="text-xs text-text-light">Grilled salmon</p>
+                        </div>
+                        <button class="p-1 rounded-full hover:bg-slate-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#FF5F1B" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FF5F1B" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>  
+                        </button>
+                        </div>
+                        
+                        <div class="flex items-center justify-between w-full">
+                        <div class="text-left ">
+                            <h1 class="text-lg text-font-dark font-semibold">$28</h1>
+                        </div>
+                        <button class="p-2 rounded-full bg-primary hover:bg-primary-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>                                  
+                        </button>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- slide 4 -->
+                  <div class="swiper-slide">
+                    <div class="slide-card text-center">
+                      <div class="h-64 flex items-center justify-center">
+                        <img src="./assests/recipe-4.png" alt="" class="max-w-[100%] max-h-[100%]"/>
+                       </div> 
+                      <div class="flex flex-col gap-5 mt-4 justify-between items-center">
+
+                        <div class="flex items-center justify-between w-full">
+                        <div class="text-left ">
+                            <h1 class="text-lg text-font-dark font-semibold">Yakitori Duck</h1>
+                            <p class="text-xs text-text-light">Tender Shredded Duck</p>
+                        </div>
+                        <button class="p-1 rounded-full hover:bg-slate-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#FF5F1B" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FF5F1B" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>  
+                        </button>
+                        </div>
+                        
+                        <div class="flex items-center justify-between w-full">
+                        <div class="text-left ">
+                            <h1 class="text-lg text-font-dark font-semibold">$28</h1>
+                        </div>
+                        <button class="p-2 rounded-full bg-primary hover:bg-primary-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>                                  
+                        </button>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- slide 5 -->
+                  <div class="swiper-slide">
+                    <div class="slide-card text-center">
+                      <div class="h-64 flex items-center justify-center">
+                        <img src="./assests/recipe-5.png" alt="" class="max-w-[100%] max-h-[100%]"/>
+                       </div> 
+                      <div class="flex flex-col gap-5 mt-4 justify-between items-center">
+
+                        <div class="flex items-center justify-between w-full">
+                        <div class="text-left ">
+                            <h1 class="text-lg text-font-dark font-semibold">Grilled Salmon</h1>
+                            <p class="text-xs text-text-light">Grilled salmon</p>
+                        </div>
+                        <button class="p-1 rounded-full hover:bg-slate-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#FF5F1B" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FF5F1B" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>  
+                        </button>
+                        </div>
+                        
+                        <div class="flex items-center justify-between w-full">
+                        <div class="text-left ">
+                            <h1 class="text-lg text-font-dark font-semibold">$28</h1>
+                        </div>
+                        <button class="p-2 rounded-full bg-primary hover:bg-primary-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>                                  
+                        </button>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+          
+          
+                
+                </div>
+                <!-- navigation buttons -->
+                <div class="swiper-button swiper-button-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                      </svg>                                          
+                </div>
+                <div class="swiper-button swiper-button-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                      </svg>                      
+                </div>
+              </div>
+
+        </section>
+
+
+        <!-- special offers -->
+
+        <section class="relative w-[95%] xxl:max-w-[80%] custom-calc-width mx-auto px-6 py-3 xxxl:py-8 flex justify-center items-center">
+            <div class="special-offer bg-white px-10 py-8 shadow-xl rounded-[20px] flex items-center justify-between">
+                <!-- image section -->
+                <div class="flex justify-between items-center basis-[50%] gap-2">
+                    <img src="./assests/specialoffer.png" alt="special offer" class="w-3/5">
+                    <div class="flex flex-col gap-2 mr-auto">
+
+                        <h1 class="text-font-dark font-semibold">Only for </br><span class="text-primary text-3xl font-semibold">Vegetables</span></h1>
+                        
+                        <p class="text-font-dark text-sm font-medium">Regular Price</p>
+                        <p class="text-primary font-semibold text-lg">$120</p>
+
+                        <p class="text-font-dark text-sm font-medium">Offer Price</p>
+                        <p class="text-primary font-semibold text-lg">$120</p>
+                    </div>
+                </div>
+
+                <!-- text section -->
+
+                <div class="flex flex-col basis-[50%] items-end gap-4 justify-self-start">
+                    <p class="text-font-dark font-bold text-2xl">Special Offer</p>
+                    <h1 class="text-primary font-semibold text-9xl tracking-[4px]">50% OFF</h1>
+                    <div class="w-11/12">
+                        <p class="text-font-dark text-sm leading-7">
+                            combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
+                            The generated Lorem Ipsum is therefore always free from repetition, injected humor, or non-characteristic words therefore.
+                        </p>
+                    </div>
+                    <!-- button -->
+                    <p class="text-primary font-semibold text-lg">Use Coupon: WE54QDS5</p>
+                    <button class="cta-btn text-white hover:bg-primary-dark active:translate-y-2 transition-transform duration-700">
+                        <p class="text-[14px] xxl:text-lg font-bold tracking-[1px]">Order Now</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+                        </svg>   
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
     <!-- scirpts -->
     <script src="./script.js"></script>
+    <!-- swiper js scripts -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        // Default parameters
+        slidesPerView: 1,
+        loop: true,
+        centeredSlides: true,
+        spaceBetween: 5,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 5
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 8
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 12
+          },
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 15
+          },
+          1368: {
+            slidesPerView: 5,
+            spaceBetween: 15
+          }
+        }
+      });
+    </script>
 </body>
 </html>
