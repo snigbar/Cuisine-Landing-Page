@@ -548,6 +548,10 @@ video {
   border-width: 0;
 }
 
+.invisible{
+  visibility: hidden;
+}
+
 .absolute{
   position: absolute;
 }
@@ -560,12 +564,20 @@ video {
   bottom: -30%;
 }
 
+.-left-\[2\%\]{
+  left: -2%;
+}
+
 .-right-5{
   right: -1.25rem;
 }
 
 .-top-\[25\%\]{
   top: -25%;
+}
+
+.bottom-\[10\%\]{
+  bottom: 10%;
 }
 
 .left-0{
@@ -624,6 +636,34 @@ video {
   top: 75%;
 }
 
+.top-10{
+  top: 2.5rem;
+}
+
+.top-\[40\%\]{
+  top: 40%;
+}
+
+.top-\[100\%\]{
+  top: 100%;
+}
+
+.top-\[80\%\]{
+  top: 80%;
+}
+
+.right-8{
+  right: 2rem;
+}
+
+.-right-8{
+  right: -2rem;
+}
+
+.top-\[70\%\]{
+  top: 70%;
+}
+
 .z-30{
   z-index: 30;
 }
@@ -657,16 +697,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.my-24{
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-}
-
-.my-16{
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
 .mb-7{
   margin-bottom: 1.75rem;
 }
@@ -683,12 +713,20 @@ video {
   margin-top: 0.25rem;
 }
 
+.mt-12{
+  margin-top: 3rem;
+}
+
 .mt-14{
   margin-top: 3.5rem;
 }
 
 .mt-16{
   margin-top: 4rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
 }
 
 .mt-4{
@@ -705,18 +743,6 @@ video {
 
 .mt-\[3px\]{
   margin-top: 3px;
-}
-
-.mt-8{
-  margin-top: 2rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
-}
-
-.mt-12{
-  margin-top: 3rem;
 }
 
 .block{
@@ -799,6 +825,10 @@ video {
   width: 6rem;
 }
 
+.w-3\/4{
+  width: 75%;
+}
+
 .w-3\/5{
   width: 60%;
 }
@@ -823,12 +853,20 @@ video {
   width: 1.5rem;
 }
 
+.w-\[35\%\]{
+  width: 35%;
+}
+
 .w-\[95\%\]{
   width: 95%;
 }
 
 .w-full{
   width: 100%;
+}
+
+.w-28{
+  width: 7rem;
 }
 
 .max-w-\[100\%\]{
@@ -880,6 +918,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-evenly{
+  justify-content: space-evenly;
+}
+
 .gap-1{
   gap: 0.25rem;
 }
@@ -912,6 +954,14 @@ video {
   justify-self: start;
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.overscroll-none{
+  overscroll-behavior: none;
+}
+
 .rounded{
   border-radius: 0.25rem;
 }
@@ -936,6 +986,10 @@ video {
   border-width: 3px;
 }
 
+.border-l-\[3px\]{
+  border-left-width: 3px;
+}
+
 .border-gray-100{
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
@@ -951,9 +1005,19 @@ video {
   border-color: rgb(255 95 27 / var(--tw-border-opacity));
 }
 
+.border-slate-300{
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
+}
+
 .bg-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(255 95 27 / var(--tw-bg-opacity));
+}
+
+.bg-secondary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 207 186 / var(--tw-bg-opacity));
 }
 
 .bg-transparent{
@@ -984,6 +1048,11 @@ video {
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-6{
@@ -1021,14 +1090,8 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.pl-2{
+  padding-left: 0.5rem;
 }
 
 .pl-3{
@@ -1073,6 +1136,11 @@ video {
 
 .text-\[52px\]{
   font-size: 52px;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg{
@@ -1356,6 +1424,11 @@ body{
   background-color: rgb(240 73 1 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-secondary:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 207 186 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-slate-300:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
@@ -1364,6 +1437,12 @@ body{
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
   color: rgb(255 95 27 / var(--tw-text-opacity));
+}
+
+.hover\:shadow-\[rgba\(50\2c _50\2c _105\2c _0\.15\)_0px_2px_5px_0px\2c _rgba\(0\2c _0\2c _0\2c _0\.05\)_0px_1px_1px_0px\]:hover{
+  --tw-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  --tw-shadow-colored: 0px 2px 5px 0px var(--tw-shadow-color), 0px 1px 1px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .focus\:outline-none:focus{
@@ -1385,6 +1464,10 @@ body{
 .active\:translate-y-2:active{
   --tw-translate-y: 0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:visible{
+  visibility: visible;
 }
 
 @media (prefers-color-scheme: dark){
