@@ -17,8 +17,8 @@ body{
 
 .circle{
     box-shadow: inset 4px 0px 0px -1px rgb(255, 95, 27,0.8);
-    min-height: 480px;
-    min-width:500px;
+    height: 500px;
+    width:500px;
     border-radius: 50%;
     z-index: 1;
     transform-origin: center;
@@ -172,13 +172,43 @@ body{
       }   
 }
 
+@media screen and (min-width: 1550px) {
+  .circle{
+    height: 550px;
+    width: 550px;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .circle{
+    height: 600px;
+    width: 600px;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .circle{
+    height: 450px;
+    width: 450px;
+  }
+ 
+}
+@media screen and (max-width: 1160px) {
+  .circle{
+    height: 420px;
+    width: 420px;
+  }
+}
+
+
 @media screen and (max-width: 1024px) {
-    .banner {
-        background: linear-gradient(to right, white 82%, #212121 18%);
+   .banner {
+        background: #ffff;
+    }
+    .circle{
+      height: 350px;
+      width: 350px;
     }
 }
 @media screen and (max-width: 780px) {
-    .banner {
-        background: #ffff;
-    }
+    
 }
